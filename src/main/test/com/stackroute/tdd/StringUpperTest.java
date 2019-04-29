@@ -31,7 +31,7 @@ public class StringUpperTest {
         String res = s.stringDemo();
 
         //assert
-        assertEquals("DIPALI", res);
+        assertEquals("CHAITRA", res);
 
     }
 

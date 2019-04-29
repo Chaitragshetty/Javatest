@@ -25,6 +25,6 @@ public class ReverseStringTest {
     public void reverseStr()
     {
         String rev=rs.reverseStr();
-        assertEquals("ilapiD", rev);
+        assertEquals("ratrachai", rev);
     }
 }
