@@ -4,7 +4,7 @@ public class ReverseString
 {
     public String reverseStr()
     {
-        String str = "Dipali";
+        String str = "Chaitra";
         String rev = "";
 
         int len = str.length();

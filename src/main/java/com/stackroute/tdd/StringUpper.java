@@ -2,7 +2,7 @@ package com.stackroute.tdd;
 
 public class StringUpper
 {
-    String name="dipali";
+    String name="chaitra";
 
     public String stringDemo()
     {
