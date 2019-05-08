@@ -8,12 +8,12 @@ import static org.junit.Assert.*;
 
 public class StringUpperTest {
 
-    StringUpper s;
+    StringUpper object;
 
     @Before
     public void setUp() throws Exception {
 
-        s=new StringUpper();
+        object=new StringUpper();
 
     }
 
@@ -22,23 +22,35 @@ public class StringUpperTest {
     }
 
     @Test
-    public void stringDemo() {
+    public void TestGivenStringIsInUppercase() {
 
         //arrange
 
 
         //act
-        String res = s.stringDemo();
+
 
         //assert
-        assertEquals("CHAITRA", res);
+        assertEquals("CHAITRA", object.stringDemo());
 
     }
 
     @Test
-    public void checkNull()
+    public void TestEnteredInputNull()
     {
-        boolean res=s.checkNull();
-        assertEquals(true, res);
+
+        assertEquals(true, object.checkNull());
+    }
+    @Test
+    public void TestNegativeInput()
+
+    {
+        assertEquals(true, object.checkNumber());
+    }
+    @Test
+    public void TestInputEnteredTab()
+
+    {
+        assertEquals(true, object.tab());
     }
 }

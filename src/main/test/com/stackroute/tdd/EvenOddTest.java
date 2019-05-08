@@ -8,12 +8,12 @@ import static org.junit.Assert.*;
 
 public class EvenOddTest {
 
-    EvenOdd o;
+    EvenOdd object;
 
     @Before
     public void setUp() throws Exception {
 
-        o=new EvenOdd();
+        object=new EvenOdd();
 
     }
 
@@ -22,23 +22,30 @@ public class EvenOddTest {
     }
 
     @Test
-    public void check()
+    public void TestGivenNumberEvenOdd()
     {
-        String res=o.checkEvenOdd();
-        assertEquals("Jerry", res);
+
+        assertEquals("Jerry", object.checkEvenOdd());
     }
 
     @Test
-    public void checkRange()
+    public void TestcheckRangeShouldReturnTrue()
     {
-        String res=o.checkRange();
-        assertEquals("True", res);
+
+        assertEquals("True", object.checkRange());
     }
 
     @Test
-    public void checkNull()
+    public void TestcheckNullShouldReturnTrue()
     {
-        boolean res=o.checkNull();
-        assertEquals(true, res);
+
+        assertEquals(true, object.checkNull());
     }
+    @Test
+    public void TestcheckNegativeInput()
+    {
+
+        assertEquals(true, object.checkNegative());
+    }
+
 }

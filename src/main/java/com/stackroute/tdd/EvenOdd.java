@@ -1,42 +1,43 @@
+//check given number is even or odd
 package com.stackroute.tdd;
 
-public class EvenOdd
-{
-    int num = 22;
+public class EvenOdd {
+    int number = 22;
 
-    public String checkEvenOdd()
-    {
-        if(num >= 20 && num <= 30)
-        {
-            if(num % 2 == 0)
-            {
-                 return "Jerry";
+    //method to check given number is even or not
+    public String checkEvenOdd() {
+        if (number >= 20 && number <= 30) {
+            if (number % 2 == 0) {
+                return "Jerry";
             }
         }
         return "Tom";
     }
 
-    public String checkRange()
-    {
-        if(num<20 || num>30)
-        {
+    //method to check range
+    public String checkRange() {
+        if (number < 20 || number > 30) {
             return "False";
-        }
-        else
-        {
+        } else {
             return "True";
         }
     }
 
-    public boolean checkNull()
-    {
-        if(num==' ')
-        {
-            System.out.println("Enter Some Input: ");
+    //method to check input is entered or not
+    public boolean checkNull() {
+        if (number == ' ') {
+
             return false;
+        } else {
+            return true;
         }
-        else
-        {
+    }
+
+    //method to check entered value is negative or not
+    public boolean checkNegative() {
+        if (number < 0) {
+            return false;
+        } else {
             return true;
         }
     }

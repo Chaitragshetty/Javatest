@@ -8,12 +8,12 @@ import static org.junit.Assert.*;
 
 public class ReverseStringTest {
 
-    ReverseString rs;
+    ReverseString reverse;
 
     @Before
     public void setUp() throws Exception {
 
-        rs=new ReverseString();
+        reverse=new ReverseString();
 
     }
 
@@ -22,9 +22,18 @@ public class ReverseStringTest {
     }
 
     @Test
-    public void reverseStr()
+    public void TestEnteredInputReversable()
     {
-        String rev=rs.reverseStr();
-        assertEquals("ratrachai", rev);
+        assertEquals("true", reverse.checkReverse(" "));
+    }
+    @Test
+    public void TestEnteredInputIsNegativeShouldReturnFalse()
+    {
+        assertEquals("true", reverse.checkNull(" "));
+    }
+    @Test
+    public void TestEnteredInputIsTabShouldReturnFalse()
+    {
+        assertEquals("true", reverse.checktab(" "));
     }
 }

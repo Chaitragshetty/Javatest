@@ -17,14 +17,28 @@ public class PalindromeTest {
     }
 
     @Test
-    public void checkPalindrome() {
+    public void checkGivenInputIsPalindrome()
+    {
 
-        Palindrome p=new Palindrome();
+        Palindrome p = new Palindrome();
 
-        int res=p.checkPalindrome();
+        int res = p.checkPalindrome();
 
         assertEquals(1, res);
-        assertEquals(0, res);
+        assertEquals(1, res);
+
+    }
+
+    @Test
+    public void checkNUll() {
+        assertEquals(true,p.checkNUll());
+
+    }
+
+    @Test
+    public void checkNegative() {
+        assertEquals(false,p.checkNegative)
+
 
     }
 }
